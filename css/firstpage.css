@@ -8,7 +8,7 @@ body{
 }
 
 .nav{
-    margin-top: 30px;
+    margin-top: 60px;
     border-radius: 20px;
     width: 1842px;
     height: 1010px;
@@ -18,7 +18,7 @@ body{
 .nav-fon{
     width: 1842px;
     height: 943px;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 20px;
     border-top: 3px solid white;
     border-bottom:3px solid white;
     border-right: 3px solid white;
@@ -36,16 +36,16 @@ body{
 .nav-button-section{
     position: relative;
     z-index: 1;
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 1px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 170px;
+    max-width: 210px;
     height: 74px;
 
 }
 .nav-button-section:active{
-    text-align: start;
     background-color: #780033;
     border-top:3px solid white;
     border-right: 3px solid white;
@@ -63,6 +63,7 @@ body{
     text-align: center;
     position: relative;
     right: -6px;
+    padding: 0 30px 25px 30px;
 }
 
 .start{
@@ -132,4 +133,123 @@ span{
     color: white;
     font-weight: 700;
     font-size: 88px;
+}
+
+body:last-child{
+    display: flex;
+    height: 100vh;
+}
+
+.information{
+    position: absolute;
+    bottom: -3px;
+    flex-shrink: 0;
+    align-self: center;
+    width: 1920px;
+    height: 359px;
+    margin-bottom: 0;
+    background-color: #780033;
+    border-radius: 20px 20px 0px 0px;
+    border: 4px solid #FFF;
+    border-bottom: 0;
+    box-shadow: 0px 4px 100px 0px rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 76px;
+}
+
+.img-inf{
+    margin-right: 24px;
+}
+
+.inc{
+    font-weight: 100;
+    font-size: 64px;
+    font-family: Raleway, sans-serif;
+    color: #FFF;
+    opacity: .2;
+    align-self: end;
+    margin-right: 75px;
+}
+
+.contacts{
+    margin-left: 76px;
+    margin-bottom: 63px;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+.last-stroke{
+    text-align: end;
+    margin-top: -70px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.cardPage{
+    text-align: center;
+    margin-top: 150px;
+    min-width: 1593px;
+    min-height: 845px;
+}
+
+.image-card{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-prod{
+    transition: all .3s;
+    margin-right: 20px;
+    width: 202px;
+    height: 637px;
+    border: 2px solid white;
+    border-radius: 35px;
+}
+
+.image-prod:hover{
+    width: 425px;
+}
+
+.text{
+    margin-right: 21px;
+    margin-bottom: 21px;
+    width: 160px;
+    height: 86px;
+    border-radius: 40px;
+    border: 0.5px solid #FFF;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(12.5px);
+    position: absolute;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.images-all{
+    margin-top: 146px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-cont{
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
